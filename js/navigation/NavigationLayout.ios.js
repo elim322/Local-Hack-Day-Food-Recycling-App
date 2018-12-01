@@ -8,10 +8,15 @@ import Map from "../screens/Map";
 import About from "../screens/About/About";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { sharedNavigationOptions } from "./config";
+import {colors} from '../assets/styles'
 
 const AboutStack = createStackNavigator({
   About: About
-});
+}, {
+    defaultNavigationOptions: ({ navigation }) => ({
+      ...sharedNavigationOptions(navigation)
+    })
+  });
 
 const LandingPageStack = createStackNavigator({
   LandingPage: LandingPage
@@ -23,7 +28,11 @@ const LandingPageStack = createStackNavigator({
 
 const MapStack = createStackNavigator({
   Map: Map
-});
+}, {
+    defaultNavigationOptions: ({ navigation }) => ({
+      ...sharedNavigationOptions(navigation)
+    })
+  });
 
 export default createBottomTabNavigator(
   {
@@ -57,7 +66,7 @@ export default createBottomTabNavigator(
       activeTintColor: "black",
       inactiveTintColor: "white",
       labelStyle: { fontSize: 15 },
-      style: { backgroundColor: "#00A0A0" }
+      style: { backgroundColor: colors.red }
     }
   }
 );
