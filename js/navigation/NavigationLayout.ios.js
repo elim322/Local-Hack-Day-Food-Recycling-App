@@ -33,7 +33,7 @@ export default createBottomTabNavigator(
         if (routeName === "About") {
           iconName = `ios-information-circle`;
         } else if (routeName === "LandingPage") {
-          iconName = `ios-calendar`;
+          iconName = `ios-body`;
         } else if (routeName === "Map") {
           iconName = `ios-map`;
         }
@@ -48,10 +48,10 @@ export default createBottomTabNavigator(
       }
     }),
     tabBarOptions: {
-      activeTintColor: "black",
-      inactiveTintColor: "#999999",
+      activeTintColor: "white",
+      inactiveTintColor: "black",
       labelStyle: { fontSize: 15 },
-      style: { backgroundColor: "black" }
+      style: { backgroundColor: "#00A0A0" }
     }
   }
 );
