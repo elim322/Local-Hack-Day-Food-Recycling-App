@@ -5,11 +5,7 @@
       "Email": "donor@donor.com",
       "Food": {
         "Type": "vegetables",
-<<<<<<< HEAD
-        "expirey": "1 week" 
-=======
         "expirey": "1 week"
->>>>>>> f450ca4001ef8bd67374bacd3dede5e078122437
       },
       "Address": "8484 donor st"
     },
