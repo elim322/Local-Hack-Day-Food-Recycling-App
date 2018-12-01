@@ -5,71 +5,90 @@
       "Email": "donor@donor.com",
       "Food": {
         "Type": "vegetables",
+<<<<<<< HEAD
         "expirey": "1 week" 
+=======
+        "expirey": "1 week"
+>>>>>>> f450ca4001ef8bd67374bacd3dede5e078122437
       },
-      "Address": 135
+      "Address": "8484 donor st"
     },
     {
       "Company": "Donor2",
-      "Email": 7,
-      "Food": 10,
-      "Address": 130
+      "Email": "einer@einer.com",
+      "Food": {
+        "Type": "vegetables",
+        "expirey": "1 week"
+      },
+      "Address": "1234 apple st"
     },
     {
       "Company": "Donor3",
-      "Email": 9,
-      "Food": 10,
-      "Address": 130
+      "Email": "emilio@emilio.com",
+      "Food": {
+        "Type": "vegetables",
+        "expirey": "1 week"
+      },
+      "Address": "6879 emilio st"
     },
     {
       "Company": "Donor4",
-      "Email": 5,
-      "Food": 10,
-      "Address": 135
+      "Email": "vanessa@vanessa.com",
+      "Food": {
+        "Type": "vegetables",
+        "expirey": "1 week"
+      },
+      "Address": "3832 vanessa st"
     },
     {
       "Company": "Donor5",
-      "Email": 7,
-      "Food": 10,
-      "Address": 130
+      "Email": "jenny@jenny.com",
+      "Food": {
+        "Type": "vegetables",
+        "expirey": "1 week"
+      },
+      "Address": "2903 jenny st"
     },
     {
       "Company": "Donor6",
-      "Email": 9,
-      "Food": 10,
-      "Address": 130
+      "Email": "brandon@brandon.com",
+      "Food": {
+        "Type": "vegetables",
+        "expirey": "1 week"
+      },
+      "Address": "3345 brandon st"
     }
   ],
   "Charity": [
     {
-      "Name": "nickel",
-      "Phone": 10,
-      "Email": 20
+      "Name": "The Best Charity Eva",
+      "Phone": 6048888888,
+      "Email": "bestcharity@charity.com"
     },
     {
-      "Name": "nickel",
-      "Phone": 10,
-      "Email": 20
+      "Name": "The Worst Charity Eva",
+      "Phone": 7788859030,
+      "Email": "worst@charity.com"
     },
     {
-      "Name": "nickel",
-      "Phone": 10,
-      "Email": 20
+      "Name": "I love food",
+      "Phone": 2556798907,
+      "Email": "ilovefood@food.com"
     },
     {
-      "Name": "nickel",
-      "Phone": 10,
-      "Email": 20
+      "Name": "Drinks are the best",
+      "Phone": 4678887564,
+      "Email": "drinks@drinks.com"
     },
     {
-      "Name": "nickel",
-      "Phone": 10,
-      "Email": 20
+      "Name": "Gimme the Food",
+      "Phone": 6048901234,
+      "Email": "gimmefood@food.com"
     },
     {
-      "Name": "nickel",
-      "Phone": 10,
-      "Email": 20
+      "Name": "Food Loving Charity",
+      "Phone": 7789690987,
+      "Email": "foodlovers@food.com"
     }
   ]
 }
