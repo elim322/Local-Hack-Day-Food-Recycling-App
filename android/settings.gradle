@@ -1,0 +1,3 @@
+rootProject.name = 'FoodRecycling'
+
+include ':app'
