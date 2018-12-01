@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     },
     charityLabel: {
         width: '80%',
-       
+        textAlign: 'center'
     }
 });
 
