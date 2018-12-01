@@ -3,11 +3,10 @@ import { Text, View, Image, ScrollView, Button } from "native-base";
 import styles from './styles'
 
 const LandingPage = () => {
-  return <View>
+  return <View style={styles.container}>
       <Text>I am a..</Text>
-
-      <Button bordered danger>
-        <Text styles={styles.charityLabel}>Charity</Text>
+      <Button bordered>
+        <Text style={styles.charityLabel}>Charity</Text>
       </Button>
     </View>;
 };
