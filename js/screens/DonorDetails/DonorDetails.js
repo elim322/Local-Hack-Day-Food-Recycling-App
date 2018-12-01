@@ -13,4 +13,4 @@ class DonorDetails extends Component {
   }
 }
 
-export default withNavigation(DonorForm);
+export default withNavigation(DonorDetails);
