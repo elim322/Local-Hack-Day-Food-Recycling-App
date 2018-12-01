@@ -7,6 +7,7 @@ import LandingPage from "../screens/LandingPage/LandingPage";
 import Map from "../screens/Map";
 import About from "../screens/About";
 import Ionicons from "react-native-vector-icons/Ionicons";
+import { sharedNavigationOptions } from "./config";
 
 const AboutStack = createStackNavigator({
   About: About
@@ -14,7 +15,12 @@ const AboutStack = createStackNavigator({
 
 const LandingPageStack = createStackNavigator({
   LandingPage: LandingPage
-});
+},  {
+    defaultNavigationOptions: ({ navigation }) => ({
+      ...sharedNavigationOptions(navigation)
+    })
+  });
+
 const MapStack = createStackNavigator({
   Map: Map
 });
