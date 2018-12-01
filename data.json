@@ -1,0 +1,75 @@
+{
+  "Donors": [
+    {
+      "Company": "Donor1",
+      "Email": "donor@donor.com",
+      "Food": {
+        "Type": "vegetables",
+        "expirey": {`$date`} 
+      },
+      "Address": 135
+    },
+    {
+      "Company": "Donor2",
+      "Email": 7,
+      "Food": 10,
+      "Address": 130
+    },
+    {
+      "Company": "Donor3",
+      "Email": 9,
+      "Food": 10,
+      "Address": 130
+    },
+    {
+      "Company": "Donor4",
+      "Email": 5,
+      "Food": 10,
+      "Address": 135
+    },
+    {
+      "Company": "Donor5",
+      "Email": 7,
+      "Food": 10,
+      "Address": 130
+    },
+    {
+      "Company": "Donor6",
+      "Email": 9,
+      "Food": 10,
+      "Address": 130
+    }
+  ],
+  "Charity": [
+    {
+      "Name": "nickel",
+      "Phone": 10,
+      "Email": 20
+    },
+    {
+      "Name": "nickel",
+      "Phone": 10,
+      "Email": 20
+    },
+    {
+      "Name": "nickel",
+      "Phone": 10,
+      "Email": 20
+    },
+    {
+      "Name": "nickel",
+      "Phone": 10,
+      "Email": 20
+    },
+    {
+      "Name": "nickel",
+      "Phone": 10,
+      "Email": 20
+    },
+    {
+      "Name": "nickel",
+      "Phone": 10,
+      "Email": 20
+    }
+  ]
+}
