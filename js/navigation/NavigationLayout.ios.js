@@ -3,7 +3,7 @@ import {
   createStackNavigator,
   createBottomTabNavigator
 } from "react-navigation";
-import LandingPage from "../screens/LandingPage";
+import LandingPage from "../screens/LandingPage/LandingPage";
 import Map from "../screens/Map";
 import About from "../screens/About";
 import Ionicons from "react-native-vector-icons/Ionicons";
