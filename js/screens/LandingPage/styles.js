@@ -9,7 +9,8 @@ const styles = StyleSheet.create({
         marginRight: 10
     },
     charityLabel: {
-        minWidth: '100%'
+        width: '80%',
+       
     }
 });
 

@@ -5,7 +5,7 @@
       "Email": "donor@donor.com",
       "Food": {
         "Type": "vegetables",
-        "expirey": {`$date`} 
+        "expirey": "1 week" 
       },
       "Address": 135
     },
