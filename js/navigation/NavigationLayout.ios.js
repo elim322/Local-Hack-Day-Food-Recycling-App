@@ -5,7 +5,7 @@ import {
 } from "react-navigation";
 import LandingPage from "../screens/LandingPage/LandingPage";
 import Map from "../screens/Map";
-import About from "../screens/About";
+import About from "../screens/About/About";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
 const AboutStack = createStackNavigator({
