@@ -5,7 +5,7 @@ import {
 } from "react-navigation";
 import LandingPage from "../screens/LandingPage/LandingPage";
 import Map from "../screens/Map";
-import About from "../screens/About";
+import About from "../screens/About/About";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { sharedNavigationOptions } from "./config";
 
@@ -39,7 +39,7 @@ export default createBottomTabNavigator(
         if (routeName === "About") {
           iconName = `ios-information-circle`;
         } else if (routeName === "LandingPage") {
-          iconName = `ios-calendar`;
+          iconName = `ios-body`;
         } else if (routeName === "Map") {
           iconName = `ios-map`;
         }
@@ -55,9 +55,9 @@ export default createBottomTabNavigator(
     }),
     tabBarOptions: {
       activeTintColor: "black",
-      inactiveTintColor: "#999999",
+      inactiveTintColor: "white",
       labelStyle: { fontSize: 15 },
-      style: { backgroundColor: "black" }
+      style: { backgroundColor: "#00A0A0" }
     }
   }
 );
