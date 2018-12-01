@@ -3,64 +3,26 @@ import {
   createStackNavigator,
   createBottomTabNavigator
 } from "react-navigation";
-import About from "../screens/About";
-import Schedule from "../screens/Schedule";
+import LandingPage from "../screens/LandingPage";
 import Map from "../screens/Map";
-import Faves from "../screens/Faves";
-import Session from "../screens/Session";
-import { sharedNavigationOptions } from "./config";
+import About from "../screens/About";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
-const AboutStack = createStackNavigator(
-  {
-    About: About
-  },
-  {
-    defaultNavigationOptions: ({ navigation }) => ({
-      ...sharedNavigationOptions(navigation)
-    })
-  }
-);
+const AboutStack = createStackNavigator({
+  About: About
+});
 
-const ScheduleStack = createStackNavigator(
-  {
-    Schedule: Schedule,
-    Session: Session
-  },
-  {
-    defaultNavigationOptions: ({ navigation }) => ({
-      ...sharedNavigationOptions(navigation)
-    })
-  }
-);
-const MapStack = createStackNavigator(
-  {
-    Map: Map
-  },
-  {
-    defaultNavigationOptions: ({ navigation }) => ({
-      ...sharedNavigationOptions(navigation)
-    })
-  }
-);
-
-const FavesStack = createStackNavigator(
-  {
-    Faves: Faves,
-    Session: Session
-  },
-  {
-    defaultNavigationOptions: ({ navigation }) => ({
-      ...sharedNavigationOptions(navigation)
-    })
-  }
-);
+const LandingPageStack = createStackNavigator({
+  LandingPage: LandingPage
+});
+const MapStack = createStackNavigator({
+  Map: Map
+});
 
 export default createBottomTabNavigator(
   {
-    Schedule: ScheduleStack,
+    LandingPage: LandingPageStack,
     Map: MapStack,
-    Faves: FavesStack,
     About: AboutStack
   },
   {
@@ -70,12 +32,10 @@ export default createBottomTabNavigator(
         let iconName;
         if (routeName === "About") {
           iconName = `ios-information-circle`;
-        } else if (routeName === "Schedule") {
+        } else if (routeName === "LandingPage") {
           iconName = `ios-calendar`;
         } else if (routeName === "Map") {
           iconName = `ios-map`;
-        } else if (routeName === "Faves") {
-          iconName = `ios-heart`;
         }
 
         return (
@@ -88,9 +48,9 @@ export default createBottomTabNavigator(
       }
     }),
     tabBarOptions: {
-      activeTintColor: "white",
+      activeTintColor: "black",
       inactiveTintColor: "#999999",
-      labelStyle: { fontSize: 15, fontFamily: "Montserrat" },
+      labelStyle: { fontSize: 15 },
       style: { backgroundColor: "black" }
     }
   }
