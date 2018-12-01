@@ -3,7 +3,7 @@ import { withNavigation } from "react-navigation";
 import { Form, Field } from "react-final-form";
 import { View, Button } from "native-base";
 
-class DonorForm extends Component {
+class CharityForm extends Component {
   constructor() {
     super();
     this.state = {
@@ -56,4 +56,4 @@ class DonorForm extends Component {
   }
 }
 
-export default withNavigation(DonorForm);
+export default withNavigation(CharityForm);

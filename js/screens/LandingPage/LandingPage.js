@@ -1,19 +1,31 @@
 import React from "react";
 import { Text, View, Image, ScrollView, Button } from "native-base";
 import styles from "./styles";
+import { withNavigation } from "react-navigation";
 
-const LandingPage = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.header}>I am a..</Text>
-      <Button bordered style={styles.charityLabelContainer}>
-        <Text style={styles.charityLabel}>Charity</Text>
-      </Button>
-      <Button bordered style={styles.charityLabelContainer}>
-        <Text style={styles.charityLabel}>Food Donor</Text>
-      </Button>
-    </View>
-  );
-};
+class LandingPage extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+  render() {
+    console.log(this.props.navigation)
+    return (
+      <View style={styles.container}>
+        <Text style={styles.header}>I am a..</Text>
+        <Button
+          bordered
+          style={styles.charityLabelContainer}
+          onPress={() => { this.props.navigation.navigate("CharityForm") }}
+          activeOpacity={0.5}
+        >
+          <Text style={styles.charityLabel}>Charity</Text>
+        </Button>
+        <Button bordered style={styles.charityLabelContainer}>
+          <Text style={styles.charityLabel}>Food Donor</Text>
+        </Button>
+      </View>
+    );
+  }
+}
 
-export default LandingPage;
+export default withNavigation(LandingPage);
