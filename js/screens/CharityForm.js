@@ -1,27 +1,61 @@
-import React from "react";
-import { Text, View, Image, ScrollView } from "react-native";
+import React, { Component } from "react";
+import { withNavigation } from "react-navigation";
+import { Form, Field, FormSpy } from "react-final-form";
+import { Text, View, Image, ScrollView, Button } from "native-base";
 
-class CharityForm extends React.Component {
-  static navigationOptions = {
-    title: "Charity Form",
-    headerTitleStyle: {
-      color: "black"
-    }
-  };
+class DonorForm extends Component {
+  constructor() {
+    super();
+    this.state = {
+      company: "",
+      email: "",
+      address: "",
+      expDate: "",
+      foodType: ""
+    };
+  }
+
   render() {
-    return (
-      <View>
-        <Text>Food Buddy is a bundle of joy! </Text>
-        <Text>
-          We help reduce hunger in our city by connecting restaurants and
-          supermarkets to charity instituions. The idea is for them to donate
-          leftover food that they can no longer sell, instead of throwing away
-          loads of perfectly consumable food.
-        </Text>
-        <Text>In additon, this gesture also reducees the amount of trash.</Text>
-      </View>
-    );
+    <View>
+      <Form>
+        <form>
+          <fieldset>
+            <Field
+              name="Name"
+              render={({ input }) => (
+                <input
+                  id="Name"
+                  placeholder="Name"
+                  onChange={e => this.setState({ company: e.target.value })}
+                />
+              )}
+            />
+            <Field
+              name="phone"
+              render={({ input }) => (
+                <input
+                  id="phone"
+                  placeholder="Phone"
+                  onChange={e => this.setState({ email: e.target.value })}
+                />
+              )}
+            />
+            <Field
+              name="email"
+              render={({ input }) => (
+                <input
+                  id="email"
+                  placeholder="Email"
+                  onChange={e => this.setState({ expDate: e.target.value })}
+                />
+              )}
+            />
+          </fieldset>
+          <Button type="submit">SUBMIT</Button>
+        </form>
+      </Form>
+    </View>;
   }
 }
 
-export default CharityForm;
+export default withNavigation(DonorForm);
