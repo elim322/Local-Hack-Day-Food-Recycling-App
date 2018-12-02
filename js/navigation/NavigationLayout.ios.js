@@ -10,7 +10,9 @@ import CharityForm from "../screens/CharityForm/CharityForm";
 import DonorForm from "../screens/DonorForm/DonorForm"
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { sharedNavigationOptions } from "./config";
+import CharityDetails from '../screens/CharityDetails/CharityDetails'
 import { colors } from "../assets/styles";
+import DonorDetails from '../screens/DonorDetails/DonorDetails'
 
 const AboutStack = createStackNavigator(
   {
@@ -26,6 +28,8 @@ const AboutStack = createStackNavigator(
 const LandingPageStack = createStackNavigator(
   {
     LandingPage: LandingPage,
+    DonorForm: DonorForm,
+    DonorDetails: DonorDetails,
     CharityForm: CharityForm,
     CharityDetails: CharityDetails
   },

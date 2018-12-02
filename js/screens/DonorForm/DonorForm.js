@@ -114,7 +114,7 @@ class DonorForm extends Component {
               <CardItem
                 footer
                 button
-                onPress={this.props.navigation.navigate("CharityDetails")}
+                // onPress={this.props.navigation.navigate("CharityDetails")}
               >
                 <Text>Donate More</Text>
               </CardItem>
