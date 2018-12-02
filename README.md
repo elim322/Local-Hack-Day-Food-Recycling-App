@@ -6,10 +6,10 @@ A Food Buddy is food recycling app created for the Local Hack Day Hackathon at U
 
 ## Contributors
 
-- Jenny Guttierez
-- Emilio Lombana
-- Einer Lim
-- Vanessa Bertoletti
+- Jenny Guttierez [phinchik_27@icloud.com]
+- Emilio Lombana [emiliolombana@gmail.com]
+- Einer Lim [einer.lim322@gmail.com]
+- Vanessa Bertoletti [vanessabertoletti@gmail.com]
 
 ## What we've learned
 
@@ -32,4 +32,4 @@ A Food Buddy is food recycling app created for the Local Hack Day Hackathon at U
 
 - Create a robust backend using GraphQL and Apollo, whilst using Realm to fetch and post queries.
 - Make better use of the map by adding dynamically generated data according the the locations of the Donors.
--
+- Create an android version of our App.
