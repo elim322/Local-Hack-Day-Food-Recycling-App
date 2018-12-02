@@ -7,6 +7,7 @@ import LandingPage from "../screens/LandingPage/LandingPage";
 import Map from "../screens/Map";
 import About from "../screens/About/About";
 import CharityForm from "../screens/CharityForm/CharityForm";
+import DonorForm from "../screens/DonorForm/DonorForm"
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { sharedNavigationOptions } from "./config";
 import { colors } from "../assets/styles";
@@ -25,7 +26,8 @@ const AboutStack = createStackNavigator(
 const LandingPageStack = createStackNavigator(
   {
     LandingPage: LandingPage,
-    CharityForm: CharityForm
+    CharityForm: CharityForm,
+    DonorForm: DonorForm
   },
   {
     defaultNavigationOptions: ({ navigation }) => ({

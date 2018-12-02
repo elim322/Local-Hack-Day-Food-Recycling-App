@@ -5,22 +5,30 @@ import { withNavigation } from "react-navigation";
 
 class LandingPage extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
   render() {
-    console.log(this.props.navigation)
     return (
       <View style={styles.container}>
         <Text style={styles.header}>I am a..</Text>
         <Button
           bordered
           style={styles.charityLabelContainer}
-          onPress={() => { this.props.navigation.navigate("CharityForm") }}
+          onPress={() => {
+            this.props.navigation.navigate("CharityForm");
+          }}
           activeOpacity={0.5}
         >
           <Text style={styles.charityLabel}>Charity</Text>
         </Button>
-        <Button bordered style={styles.charityLabelContainer}>
+        <Button
+          bordered
+          style={styles.charityLabelContainer}
+          onPress={() => {
+            this.props.navigation.navigate("DonorForm");
+          }}
+          activeOpacity={0.5}
+        >
           <Text style={styles.charityLabel}>Food Donor</Text>
         </Button>
       </View>
