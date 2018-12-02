@@ -8,20 +8,6 @@ class LandingPage extends React.Component {
     super(props);
   }
 
-<<<<<<< HEAD
-=======
-  componentWillMount() {
-    this.props.navigation.setParams({
-      tabStyle: {
-        display: "none"
-      }
-    });
-  }
-  // static navigationOptions = {
-  //   tabBarVisible: false
-  // };
-
->>>>>>> 1217b0125d028427dd29b03ed25ef16a6a641773
   render() {
     return (
       <View style={styles.container}>
