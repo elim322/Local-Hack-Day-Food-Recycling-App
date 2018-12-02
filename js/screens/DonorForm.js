@@ -16,23 +16,25 @@ class DonorForm extends Component {
   }
 
   render() {
-    <View>
-      <Form>
-        <form>
-          <fieldset>
-            <Field
-              name="company"
-              render={({ input }) => (
-                <input
-                  type="file"
-                  onChange={e => this.setState({ company: e.target.value })}
-                />
-              )}
-            />
-          </fieldset>
-        </form>
-      </Form>
-    </View>;
+    return (
+      <View>
+        <Form>
+          <form>
+            <fieldset>
+              <Field
+                name="company"
+                render={({ input }) => (
+                  <input
+                    type="file"
+                    onChange={e => this.setState({ company: e.target.value })}
+                  />
+                )}
+              />
+            </fieldset>
+          </form>
+        </Form>
+      </View>
+    );
   }
 }
 
