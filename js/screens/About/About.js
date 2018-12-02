@@ -8,8 +8,7 @@ class About extends React.Component {
     backgroundColor: "Pink",
     title: "About",
     headerTitleStyle: {
-      color: "black",
-      
+      color: "black"
     }
   };
 
@@ -23,48 +22,18 @@ class About extends React.Component {
   render() {
     return (
       <View style={styles.aboutContainer}>
-      <ScrollView>
-        
-          <View style={styles.logoCntr}>
-            <Image
-              source={require("../../assets/images/two.png")}
-              style={styles.logo}
-            />
-          </View>
-
-          <Text style={styles.aboutText}>Food Buddy is a bundle of joy! </Text>
+        <ScrollView>
+          <Text style={styles.aboutHeader}>There's enough food to go around!</Text>
           <Text style={styles.aboutText}>
             We help reduce hunger in our city by connecting restaurants and
-            supermarkets to charity instituions. The idea is for them to donate
-            leftover food that they can no longer sell, instead of throwing away
-            loads of perfectly consumable food.
+            supermarkets to charity institutions. The idea is for food-related businesses to donate
+            leftover food that they can no longer sell to charities that can help feed the less fortunate!
           </Text>
-          <Text style={styles.aboutTextBottom}>
-            In additon, this gesture also reducees the amount of trash.
+          <Text style={styles.aboutText}>
+          With the help of technology, we can ALL make a difference!
           </Text>
-
-          <View style={{ flex: 1 }}>
-            <Fab
-              active={this.state.active}
-              direction="up"
-              style={styles.aboutShare}
-              onPress={() => this.setState({ active: !this.state.active })}
-            >
-              <Icon name="ios-share" />
-              <Button style={{ backgroundColor: "#34A34F" }}>
-                <Icon name="logo-whatsapp" />
-              </Button>
-              <Button style={{ backgroundColor: "#3B5998" }}>
-                <Icon name="logo-facebook" />
-              </Button>
-              <Button disabled style={{ backgroundColor: "#DD5144" }}>
-                <Icon name="mail" />
-              </Button>
-            </Fab>
-          </View>
-  
-      </ScrollView>
-            </View>
+        </ScrollView>
+      </View>
     );
   }
 }
