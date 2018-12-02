@@ -16,7 +16,6 @@ class DonorForm extends Component {
   }
 
   render() {
-<<<<<<< HEAD
     <View>
       <Form>
         <form>
@@ -66,27 +65,6 @@ class DonorForm extends Component {
         </form>
       </Form>
     </View>;
-=======
-    return (
-      <View>
-        <Form>
-          <form>
-            <fieldset>
-              <Field
-                name="company"
-                render={({ input }) => (
-                  <input
-                    type="file"
-                    onChange={e => this.setState({ company: e.target.value })}
-                  />
-                )}
-              />
-            </fieldset>
-          </form>
-        </Form>
-      </View>
-    );
->>>>>>> ef6916f14d2c992aa55d96b69f22386bf16b7ad3
   }
 }
 
