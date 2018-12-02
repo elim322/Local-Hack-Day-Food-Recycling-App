@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, Image, ScrollView, Button } from "native-base";
+import { Text, View, Button } from "native-base";
 import styles from "./styles";
 import { withNavigation } from "react-navigation";
 
@@ -7,6 +7,18 @@ class LandingPage extends React.Component {
   constructor(props) {
     super(props);
   }
+
+  componentWillMount() {
+    this.props.navigation.setParams({
+      tabStyle: {
+        display: "none"
+      }
+    });
+  }
+  // static navigationOptions = {
+  //   tabBarVisible: false
+  // };
+
   render() {
     return (
       <View style={styles.container}>

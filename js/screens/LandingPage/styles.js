@@ -15,7 +15,8 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: colors.red,
     fontFamily: typography.fontMain,
-      borderColor: colors.red,
+    fontFamily: "Montserrat",
+    borderColor: colors.red,
     fontSize: 30
   },
   header: {
@@ -24,9 +25,9 @@ const styles = StyleSheet.create({
     alignSelf: "center"
   },
   charityLabelContainer: {
-      borderColor: colors.red,
-      marginTop: 50,
-      height: 100
+    borderColor: colors.red,
+    marginTop: 50,
+    height: 100
   }
 });
 

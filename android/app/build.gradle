@@ -137,6 +137,8 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-maps')
+    compile project(':@mapbox_react-native-mapbox-gl')
     compile project(':react-native-vector-icons')
     compile project(':react-native-gesture-handler')
     implementation fileTree(dir: "libs", include: ["*.jar"])
