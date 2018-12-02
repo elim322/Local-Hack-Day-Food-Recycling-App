@@ -6,35 +6,44 @@ import {
 import LandingPage from "../screens/LandingPage/LandingPage";
 import Map from "../screens/Map";
 import About from "../screens/About/About";
-import CharityForm from "../screens/CharityForm"
+import CharityForm from "../screens/CharityForm/CharityForm";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { sharedNavigationOptions } from "./config";
-import {colors} from '../assets/styles'
+import { colors } from "../assets/styles";
 
-const AboutStack = createStackNavigator({
-  About: About
-}, {
+const AboutStack = createStackNavigator(
+  {
+    About: About
+  },
+  {
     defaultNavigationOptions: ({ navigation }) => ({
       ...sharedNavigationOptions(navigation)
     })
-  });
+  }
+);
 
-const LandingPageStack = createStackNavigator({
-  LandingPage: LandingPage,
-  CharityForm: CharityForm
-},  {
+const LandingPageStack = createStackNavigator(
+  {
+    LandingPage: LandingPage,
+    CharityForm: CharityForm
+  },
+  {
     defaultNavigationOptions: ({ navigation }) => ({
       ...sharedNavigationOptions(navigation)
     })
-  });
+  }
+);
 
-const MapStack = createStackNavigator({
-  Map: Map
-}, {
+const MapStack = createStackNavigator(
+  {
+    Map: Map
+  },
+  {
     defaultNavigationOptions: ({ navigation }) => ({
       ...sharedNavigationOptions(navigation)
     })
-  });
+  }
+);
 
 export default createBottomTabNavigator(
   {
