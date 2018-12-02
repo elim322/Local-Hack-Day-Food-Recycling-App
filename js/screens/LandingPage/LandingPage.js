@@ -5,17 +5,31 @@ import { withNavigation } from "react-navigation";
 
 class LandingPage extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
+
+  componentWillMount() {
+    this.props.navigation.setParams({
+      tabStyle: {
+        display: "none"
+      }
+    });
+  }
+  // static navigationOptions = {
+  //   tabBarVisible: false
+  // };
+
   render() {
-    console.log(this.props.navigation)
+    console.log(this.props.navigation);
     return (
       <View style={styles.container}>
         <Text style={styles.header}>I am a..</Text>
         <Button
           bordered
           style={styles.charityLabelContainer}
-          onPress={() => { this.props.navigation.navigate("CharityForm") }}
+          onPress={() => {
+            this.props.navigation.navigate("CharityForm");
+          }}
           activeOpacity={0.5}
         >
           <Text style={styles.charityLabel}>Charity</Text>

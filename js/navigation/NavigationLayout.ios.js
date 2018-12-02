@@ -25,15 +25,14 @@ const AboutStack = createStackNavigator(
 const LandingPageStack = createStackNavigator(
   {
     LandingPage: LandingPage,
-    CharityForm: CharityForm,
+    CharityForm: CharityForm
   },
   {
     defaultNavigationOptions: ({ navigation }) => ({
-      ...sharedNavigationOptions(navigation),
+      ...sharedNavigationOptions(navigation)
     })
   }
 );
-
 
 const MapStack = createStackNavigator(
   {
@@ -55,6 +54,8 @@ export default createBottomTabNavigator(
   {
     defaultNavigationOptions: ({ navigation }) => ({
       tabBarIcon: ({ horizontal, tintColor }) => {
+        console.log("hello", navigation);
+
         const { routeName } = navigation.state;
         let iconName;
         if (routeName === "About") {
@@ -74,11 +75,13 @@ export default createBottomTabNavigator(
         );
       }
     }),
-    tabBarOptions:  {
+    tabBarOptions: {
       activeTintColor: "black",
       inactiveTintColor: "white",
       labelStyle: { fontSize: 15 },
-      style: { backgroundColor: colors.red }
+      style: {
+        backgroundColor: colors.red
+      }
     }
   }
 );
