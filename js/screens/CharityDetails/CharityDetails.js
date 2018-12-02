@@ -3,11 +3,11 @@ import { View, Text, SectionList } from "react-native";
 import { withNavigation } from "react-navigation";
 import styles from "./styles";
 
-class DonorDetails extends Component {
+class CharityDetails extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.pageTitle}>Items to Pickup</Text>
+        <Text style={styles.pageTitle}>My Pickups</Text>
         <SectionList
           renderItem={({ item, index, section }) => (
             <Text style={styles.items} key={index}>
@@ -18,14 +18,13 @@ class DonorDetails extends Component {
             <Text style={styles.header}>{title}</Text>
           )}
           sections={[
-            {
-              title: "Save-on Foods",
-              data: ["654 Howe Street Vancouver BC", "Vegetable", "4/4/2018"]
-            }
+            { title: "Save-on Foods", data: ["Vegetables"] },
+            { title: "Safeway", data: ["Dry Raw Food"] },
+            { title: "Lablows", data: ["Vegetables"] }
           ]}
         />
       </View>
     );
   }
 }
-export default withNavigation(DonorDetails);
+export default withNavigation(CharityDetails);
