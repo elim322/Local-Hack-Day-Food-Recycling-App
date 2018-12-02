@@ -7,12 +7,12 @@ import LandingPage from "../screens/LandingPage/LandingPage";
 import Map from "../screens/Map";
 import About from "../screens/About/About";
 import CharityForm from "../screens/CharityForm/CharityForm";
-import DonorForm from "../screens/DonorForm/DonorForm"
+import DonorForm from "../screens/DonorForm/DonorForm";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { sharedNavigationOptions } from "./config";
-import CharityDetails from '../screens/CharityDetails/CharityDetails'
+import CharityDetails from "../screens/CharityDetails/CharityDetails";
 import { colors } from "../assets/styles";
-import DonorDetails from '../screens/DonorDetails/DonorDetails'
+import DonorDetails from "../screens/DonorDetails/DonorDetails";
 
 const AboutStack = createStackNavigator(
   {
@@ -27,7 +27,7 @@ const AboutStack = createStackNavigator(
 
 const LandingPageStack = createStackNavigator(
   {
-    LandingPage: LandingPage,
+    Select: LandingPage,
     DonorForm: DonorForm,
     DonorDetails: DonorDetails,
     CharityForm: CharityForm,
@@ -53,7 +53,7 @@ const MapStack = createStackNavigator(
 
 export default createBottomTabNavigator(
   {
-    LandingPage: LandingPageStack,
+    Select: LandingPageStack,
     Map: MapStack,
     About: AboutStack
   },
@@ -66,7 +66,7 @@ export default createBottomTabNavigator(
         let iconName;
         if (routeName === "About") {
           iconName = `ios-information-circle`;
-        } else if (routeName === "LandingPage") {
+        } else if (routeName === "Select") {
           iconName = `ios-body`;
         } else if (routeName === "Map") {
           iconName = `ios-map`;

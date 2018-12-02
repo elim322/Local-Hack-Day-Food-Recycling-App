@@ -8,8 +8,6 @@ class LandingPage extends React.Component {
     super(props);
   }
 
-<<<<<<< HEAD
-=======
   componentWillMount() {
     this.props.navigation.setParams({
       tabStyle: {
@@ -21,7 +19,6 @@ class LandingPage extends React.Component {
   //   tabBarVisible: false
   // };
 
->>>>>>> cf7b9695666c49db2a82fcabab3f94b39d769d14
   render() {
     return (
       <View style={styles.container}>

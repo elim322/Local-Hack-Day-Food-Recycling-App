@@ -36,6 +36,10 @@ const styles = StyleSheet.create({
     fontWeight: "400",
     fontSize: 16,
     fontFamily: montserrat
+  },
+  submit: {
+    alignSelf: "center",
+    marginTop: 20
   }
 });
 
