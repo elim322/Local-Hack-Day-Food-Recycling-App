@@ -18,4 +18,14 @@ export const typography = {
           fontMain: "Montserrat-Regular"
       }
   })
+  // fontMainLight: "Montserrat-Light",
+  // ...Platform.select({
+  //     ios: {
+  //         fontMain: "Montserrat"
+  //     },
+  //     android: {
+  //         fontMain: "Montserrat-Regular"
+  //     }
+  // })
+>>>>>>> 2941c9f86d8265cfd128776be72f1ca18492f485
 };
