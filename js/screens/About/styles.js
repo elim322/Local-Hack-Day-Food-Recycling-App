@@ -4,13 +4,15 @@ import {colors, typography} from '../../assets/styles'
 const styles = StyleSheet.create({
   aboutContainer: {
     height: "100%",
+    marginLeft: 10,
+    marginRight: 10
   },
   aboutHeader: {
     fontSize: 28,
-    fontFamily: typography.fontMain,
     fontWeight: '900',
     textAlign: 'center',
-    marginTop: '10%'
+    marginTop: '10%',
+    color: colors.red
   },
   aboutText: {
     fontSize: 18,
