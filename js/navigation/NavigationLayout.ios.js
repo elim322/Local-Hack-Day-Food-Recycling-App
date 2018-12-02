@@ -56,6 +56,8 @@ export default createBottomTabNavigator(
   {
     defaultNavigationOptions: ({ navigation }) => ({
       tabBarIcon: ({ horizontal, tintColor }) => {
+        console.log("hello", navigation);
+
         const { routeName } = navigation.state;
         let iconName;
         if (routeName === "About") {
@@ -79,7 +81,9 @@ export default createBottomTabNavigator(
       activeTintColor: "black",
       inactiveTintColor: "white",
       labelStyle: { fontSize: 15 },
-      style: { backgroundColor: colors.red }
+      style: {
+        backgroundColor: colors.red
+      }
     }
   }
 );
