@@ -27,7 +27,7 @@ const AboutStack = createStackNavigator(
 
 const LandingPageStack = createStackNavigator(
   {
-    LandingPage: LandingPage,
+    Select: LandingPage,
     DonorForm: DonorForm,
     DonorDetails: DonorDetails,
     CharityForm: CharityForm,
@@ -53,7 +53,7 @@ const MapStack = createStackNavigator(
 
 export default createBottomTabNavigator(
   {
-    LandingPage: LandingPageStack,
+    Select: LandingPageStack,
     Map: MapStack,
     About: AboutStack
   },
@@ -64,7 +64,7 @@ export default createBottomTabNavigator(
         let iconName;
         if (routeName === "About") {
           iconName = `ios-information-circle`;
-        } else if (routeName === "LandingPage") {
+        } else if (routeName === "Select") {
           iconName = `ios-body`;
         } else if (routeName === "Map") {
           iconName = `ios-map`;

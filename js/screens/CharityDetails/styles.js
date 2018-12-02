@@ -12,11 +12,14 @@ const montserrat = Platform.select({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "flex-start"
+    alignItems: "flex-start",
+    padding: 30
   },
   pageTitle: {
     fontWeight: "bold",
-    fontSize: 24
+    fontSize: 24,
+    marginBottom: 20,
+    textAlign: 'center'
   },
   header: {
     fontWeight: "bold",
@@ -36,6 +39,10 @@ const styles = StyleSheet.create({
     fontWeight: "400",
     fontSize: 16,
     fontFamily: montserrat
+  },
+  submit: {
+    alignSelf: "center",
+    marginTop: 20
   }
 });
 

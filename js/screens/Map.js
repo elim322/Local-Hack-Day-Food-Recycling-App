@@ -102,6 +102,7 @@ class Map extends Component {
                 alignSelf: "center",
                 marginTop: 15
               }}
+              onPress={() => this.props.navigation.navigate("CharityDetails")}
             >
               <Text
                 style={{
