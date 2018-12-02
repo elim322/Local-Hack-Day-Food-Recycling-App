@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Dimensions } from "react-native";
 import { withNavigation } from "react-navigation";
 import {
   Container,
@@ -70,10 +71,11 @@ class DonorForm extends Component {
             iosIcon={<Icon name="ios-arrow-down-outline" />}
             style={styles.dropdown}
             placeholder="Select food category"
-            placeholderStyle={{ color: "#00A0A0" }}
+            placeholderStyle={{ color: "#35322F"}}
             placeholderIconColor="#00A0A0"
             selectedValue={this.state.selected2}
             onValueChange={this.onValueChange2}
+  
           >
             {/* {foods.map(food => {
               <Picker.Item>{food[1].Food.Type}</Picker.Item>;
@@ -92,12 +94,12 @@ class DonorForm extends Component {
               maximumDate={new Date(2018, 12, 31)}
               locale={"en"}
               timeZoneOffsetInMinutes={undefined}
-              modalTransparent={true}
+              modalTransparent={false}
               animationType={"fade"}
               androidMode={"default"}
               placeHolderText="Select Expiry date"
               textStyle={{ color: "#DF5B38" }}
-              placeHolderTextStyle={{ color: "#35322F" }}
+              placeHolderTextStyle={{ color: "#35322F", marginLeft: 6 }}
             />
           </Content>
           {this.state.show ? (
@@ -111,13 +113,14 @@ class DonorForm extends Component {
                 💪
               </Text>
 
-              <CardItem
-                footer
-                button
-                // onPress={this.props.navigation.navigate("CharityDetails")}
+              <Button
+                success
+                full
+                style={{ justifyContent: "center" }}
+                onPress={() => this.props.navigation.navigate("DonorDetails")}
               >
-                <Text>Donate More</Text>
-              </CardItem>
+                <Text style={{ marginRight: 175 }}>Go to details</Text>
+              </Button>
             </Card>
           ) : (
             <View />

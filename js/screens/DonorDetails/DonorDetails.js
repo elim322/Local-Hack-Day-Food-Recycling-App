@@ -2,8 +2,12 @@ import React, { Component } from "react";
 import { View, Text, SectionList } from "react-native";
 import { withNavigation } from "react-navigation";
 import styles from "../CharityDetails/styles";
+import { Card } from 'native-base'
 
 class DonorDetails extends Component {
+  static navigationOptions = {
+    headerTintColor: "#fff"
+  };
   render() {
     return (
       <View style={styles.container}>
