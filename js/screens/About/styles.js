@@ -1,35 +1,22 @@
 import { StyleSheet } from "react-native";
+import {colors, typography} from '../../assets/styles'
 
 const styles = StyleSheet.create({
   aboutContainer: {
     height: "100%",
-    backgroundColor: "#35322F"
-
   },
-
+  aboutHeader: {
+    fontSize: 28,
+    fontFamily: typography.fontMain,
+    fontWeight: '900',
+    textAlign: 'center',
+    marginTop: '10%'
+  },
   aboutText: {
     fontSize: 18,
-    color: "white",
     padding: 10,
-  },
-  logo: {
-    width: 245,
-    height: 60,
-    alignSelf: "center",
-    marginTop: 20,
-    marginBottom: 20
-  },
-  aboutTextBottom: {
-    fontSize: 18,
-    color: "white",
-    padding: 10,
-    width: 250
-  },
-  aboutShare: {
-    backgroundColor: "#00A0A0",
-    position: "absolute",
-    bottom: -60
-
+    fontFamily: typography.fontMain,
+    marginTop: '15%'
   }
 });
 

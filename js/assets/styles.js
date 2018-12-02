@@ -8,7 +8,11 @@ export const colors = {
 };
 
 export const typography = {
+<<<<<<< HEAD
   baseSize: 16
+=======
+  // baseSize: 16,
+>>>>>>> ef6916f14d2c992aa55d96b69f22386bf16b7ad3
   // fontMainLight: "Montserrat-Light",
   // ...Platform.select({
   //     ios: {
