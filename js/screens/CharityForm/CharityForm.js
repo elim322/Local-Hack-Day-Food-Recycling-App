@@ -41,7 +41,7 @@ class CharityForm extends Component {
             <Button
               style={styles.submit}
               bordered
-              onPress={() => this.props.navigation.navigate(CharityDetails)}
+              onPress={() => this.props.navigation.navigate("CharityDetails")}
               activeOpacity={0.5}
             >
               <Text>Submit</Text>

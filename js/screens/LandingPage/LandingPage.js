@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, Image, ScrollView, Button } from "native-base";
+import { Text, View, Button } from "native-base";
 import styles from "./styles";
 import { withNavigation } from "react-navigation";
 
@@ -20,7 +20,6 @@ class LandingPage extends React.Component {
   // };
 
   render() {
-    console.log(this.props.navigation);
     return (
       <View style={styles.container}>
         <Text style={styles.header}>I am a..</Text>
