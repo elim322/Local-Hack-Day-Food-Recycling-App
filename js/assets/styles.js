@@ -8,6 +8,7 @@ export const colors = {
 };
 
 export const typography = {
+<<<<<<< HEAD
   baseSize: 16
   // fontMainLight: "Montserrat-Light",
   // ...Platform.select({
@@ -18,4 +19,16 @@ export const typography = {
   //         fontMain: "Montserrat-Regular"
   //     }
   // })
+=======
+  baseSize: 16,
+  fontMainLight: "Montserrat-Light",
+  ...Platform.select({
+      ios: {
+          fontMain: "Montserrat"
+      },
+      android: {
+          fontMain: "Montserrat-Regular"
+      }
+  })
+>>>>>>> cf7b9695666c49db2a82fcabab3f94b39d769d14
 };
