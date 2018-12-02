@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, SectionList } from "react-native";
 import { withNavigation } from "react-navigation";
-import styles from "./styles";
+import styles from "../CharityDetails/styles";
 
 class DonorDetails extends Component {
   render() {
