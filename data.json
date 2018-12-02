@@ -1,13 +1,13 @@
 {
   "Donors": [
     {
-      "Company": "Donor1",
+      "Company": "Save On Food",
       "Email": "donor@donor.com",
       "Food": {
         "Type": "vegetables",
         "expirey": "1 week"
       },
-      "Address": "8484 donor st"
+      "Address": "654 Howe Street Vancouver BC"
     },
     {
       "Company": "Donor2",
