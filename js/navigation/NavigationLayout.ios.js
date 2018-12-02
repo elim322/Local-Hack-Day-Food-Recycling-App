@@ -7,12 +7,12 @@ import LandingPage from "../screens/LandingPage/LandingPage";
 import Map from "../screens/Map";
 import About from "../screens/About/About";
 import CharityForm from "../screens/CharityForm/CharityForm";
-import DonorForm from "../screens/DonorForm/DonorForm"
+import DonorForm from "../screens/DonorForm/DonorForm";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { sharedNavigationOptions } from "./config";
-import CharityDetails from '../screens/CharityDetails/CharityDetails'
+import CharityDetails from "../screens/CharityDetails/CharityDetails";
 import { colors } from "../assets/styles";
-import DonorDetails from '../screens/DonorDetails/DonorDetails'
+import DonorDetails from "../screens/DonorDetails/DonorDetails";
 
 const AboutStack = createStackNavigator(
   {
@@ -60,8 +60,6 @@ export default createBottomTabNavigator(
   {
     defaultNavigationOptions: ({ navigation }) => ({
       tabBarIcon: ({ horizontal, tintColor }) => {
-        console.log("hello", navigation);
-
         const { routeName } = navigation.state;
         let iconName;
         if (routeName === "About") {

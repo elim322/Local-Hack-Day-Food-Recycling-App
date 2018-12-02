@@ -13,6 +13,7 @@ export const sharedNavigationOptions = navigation => ({
       source={require("../assets/images/three.png")}
     />
   ),
+
   headerStyle: {
     backgroundColor: colors.red
   }
