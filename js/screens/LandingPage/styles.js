@@ -14,19 +14,20 @@ const styles = StyleSheet.create({
     width: "80%",
     textAlign: "center",
     color: colors.red,
-    fontFamily: typography.fontMain,
-      borderColor: colors.red,
+    // fontFamily: typography.fontMain,
+    // fontFamily: "Montserrat",
+    borderColor: colors.red,
     fontSize: 30
   },
   header: {
     fontSize: 40,
-    fontFamily: typography.fontMain,
+    // fontFamily: typography.fontMain,
     alignSelf: "center"
   },
   charityLabelContainer: {
-      borderColor: colors.red,
-      marginTop: 50,
-      height: 100
+    borderColor: colors.red,
+    marginTop: 50,
+    height: 100
   }
 });
 

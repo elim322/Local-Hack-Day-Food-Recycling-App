@@ -11,7 +11,7 @@ class DonorForm extends Component {
       email: "",
       address: "",
       expDate: "",
-      food: ""
+      foodType: ""
     };
   }
 
@@ -24,12 +24,44 @@ class DonorForm extends Component {
               name="company"
               render={({ input }) => (
                 <input
-                  type="file"
+                  id="company"
+                  placeholder="Company Name"
                   onChange={e => this.setState({ company: e.target.value })}
                 />
               )}
             />
+            <Field
+              name="email"
+              render={({ input }) => (
+                <input
+                  id="email"
+                  placeholder="Email"
+                  onChange={e => this.setState({ email: e.target.value })}
+                />
+              )}
+            />
+            <Field
+              name="expDate"
+              render={({ input }) => (
+                <input
+                  id="expDate"
+                  placeholder="Expiration Date"
+                  onChange={e => this.setState({ expDate: e.target.value })}
+                />
+              )}
+            />
+            <Field
+              name="address"
+              render={({ input }) => (
+                <input
+                  id="address"
+                  placeholder="Address"
+                  onChange={e => this.setState({ address: e.target.value })}
+                />
+              )}
+            />
           </fieldset>
+          <Button type="submit">SUBMIT</Button>
         </form>
       </Form>
     </View>;
