@@ -1,21 +1,23 @@
 import React from "react";
-import { Text, View, Image, ScrollView, Button } from "native-base";
+import { Text, View, Button } from "native-base";
 import styles from "./styles";
 import { withNavigation } from "react-navigation";
 
 class LandingPage extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
   render() {
-    console.log(this.props.navigation)
+    console.log(this.props.navigation);
     return (
       <View style={styles.container}>
         <Text style={styles.header}>I am a..</Text>
         <Button
           bordered
           style={styles.charityLabelContainer}
-          onPress={() => { this.props.navigation.navigate("CharityForm") }}
+          onPress={() => {
+            this.props.navigation.navigate("CharityForm");
+          }}
           activeOpacity={0.5}
         >
           <Text style={styles.charityLabel}>Charity</Text>
