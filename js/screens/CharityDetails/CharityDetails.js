@@ -17,11 +17,7 @@ class CharityDetails extends Component {
           renderSectionHeader={({ section: { title } }) => (
             <Text style={styles.header}>{title}</Text>
           )}
-          sections={[
-            { title: "Save-on Foods", data: ["Vegetables"] },
-            { title: "Safeway", data: ["Dry Raw Food"] },
-            { title: "Lablows", data: ["Vegetables"] }
-          ]}
+          sections={[{ title: "Save-on Foods", data: ["Vegetables"] }]}
         />
       </View>
     );
