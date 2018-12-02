@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { withNavigation } from "react-navigation";
-import { Form, Field, FormSpy } from "react-final-form";
-import { Text, View, Image, ScrollView, Button } from "native-base";
+import { Form, Field } from "react-final-form";
+import { View, Button } from "native-base";
 
 class DonorForm extends Component {
   constructor() {
@@ -16,27 +16,6 @@ class DonorForm extends Component {
   }
 
   render() {
-<<<<<<< HEAD
-    return (
-      <View>
-        <Form>
-          <form>
-            <fieldset>
-              <Field
-                name="company"
-                render={({ input }) => (
-                  <input
-                    type="file"
-                    onChange={e => this.setState({ company: e.target.value })}
-                  />
-                )}
-              />
-            </fieldset>
-          </form>
-        </Form>
-      </View>
-    );
-=======
     <View>
       <Form>
         <form>
@@ -86,7 +65,6 @@ class DonorForm extends Component {
         </form>
       </Form>
     </View>;
->>>>>>> b8516d123e94b4ea950a788ff4ce65583f03e3b2
   }
 }
 

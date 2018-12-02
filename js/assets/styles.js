@@ -11,7 +11,6 @@ export const typography = {
   baseSize: 16,
   fontMainLight: "Montserrat-Light",
   ...Platform.select({
-<<<<<<< HEAD
     ios: {
       fontMain: "Montserrat"
     },
@@ -19,22 +18,13 @@ export const typography = {
       fontMain: "Montserrat-Regular"
     }
   })
-=======
-      ios: {
-          fontMain: "Montserrat"
-      },
-      android: {
-          fontMain: "Montserrat-Regular"
-      }
-  })
-//   fontMainLight: "Montserrat-Light",
-//   ...Platform.select({
-//       ios: {
-//           fontMain: "Montserrat"
-//       },
-//       android: {
-//           fontMain: "Montserrat-Regular"
-//       }
-//   })
->>>>>>> b8516d123e94b4ea950a788ff4ce65583f03e3b2
+  //   fontMainLight: "Montserrat-Light",
+  //   ...Platform.select({
+  //       ios: {
+  //           fontMain: "Montserrat"
+  //       },
+  //       android: {
+  //           fontMain: "Montserrat-Regular"
+  //       }
+  //   })
 };

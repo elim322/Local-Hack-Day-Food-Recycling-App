@@ -8,7 +8,6 @@ class LandingPage extends React.Component {
     super(props);
   }
   render() {
-    console.log(this.props.navigation);
     return (
       <View style={styles.container}>
         <Text style={styles.header}>I am a..</Text>

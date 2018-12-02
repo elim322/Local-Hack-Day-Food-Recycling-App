@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { withNavigation } from "react-navigation";
-import { Container, Header, Content, Tab, Tabs } from 'native-base';
+import { Container, Header, Tab, Tabs } from 'native-base';
 import CharityTab from '../../components/CharityTab';
 import DonateTab from '../../components/DonateTab'
 ​export default class TabsExample extends Component {
